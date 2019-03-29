@@ -80,7 +80,7 @@ const PageTemplate = ({ data }) => {
         item.node.sessionMainWorkThought.childMarkdownRemark.html,
       sessionCommitment: item.node.sessionCommitment.childMarkdownRemark.html,
     }))
-    .reverse()
+    .sort(item => item.date)
 
   console.log(tableData)
   return (
