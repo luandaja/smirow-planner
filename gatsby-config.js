@@ -162,6 +162,18 @@ module.exports = {
         color: config.themeColor,
       },
     },
-    'gatsby-plugin-netlify',
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          '/*/static/*': ['cache-control: public,max-age=31536000,immutable'],
+          '/*.html': ['cache-control: public, max-age=0, must-revalidate'],
+          '/*.js': ['cache-control: public, max-age=31536000,immutable'],
+          '/*.css': ['cache-control: public, max-age=31536000,immutable'],
+          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
+        },
+        // allPageHeaders: []
+      },
+    },
   ],
 }

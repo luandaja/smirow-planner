@@ -46,32 +46,28 @@ const Footer = () => (
     <List>
       <Item>
         <a
-          href="https://www.contentful.com/"
+          href="https://smirow-art.firebaseapp.com/"
           rel="nofollow noopener noreferrer"
           target="_blank"
         >
-          <img
-            src="https://images.ctfassets.net/fo9twyrwpveg/44baP9Gtm8qE2Umm8CQwQk/c43325463d1cb5db2ef97fca0788ea55/PoweredByContentful_LightBackground.svg"
-            style={{ width: '100px' }}
-            alt="Powered by Contentful"
-          />
+          Smirrow
         </a>
       </Item>
       <Item>
         <a
-          href="https://github.com/ryanwiemer/gatsby-starter-gcn"
+          href="https://github.com/luandaja"
           target="_blank"
           rel="noopener noreferrer"
         >
-          gatsby-starter-gcn
+          Smirow planner
         </a>{' '}
         by{' '}
         <a
-          href="https://github.com/ryanwiemer"
+          href="https://github.com/luandaja"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @ryanwiemer
+          @luandaja94
         </a>
       </Item>
     </List>

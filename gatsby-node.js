@@ -138,5 +138,32 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 
-  return Promise.all([loadPosts, loadTags, loadPages])
+  const loadWorkshopPlans = new Promise((resolve, reject) => {
+    graphql(`
+      {
+        allContentfulWorkshop {
+          edges {
+            node {
+              slug
+            }
+          }
+        }
+      }
+    `).then(result => {
+      const pages = result.data.allContentfulWorkshop.edges
+      pages.map(({ node }) => {
+        console.log(node.slug)
+        createPage({
+          path: `${node.slug}/`,
+          component: path.resolve(`./src/templates/workshop-plan.js`),
+          context: {
+            slug: node.slug,
+          },
+        })
+      })
+      resolve()
+    })
+  })
+
+  return Promise.all([loadPosts, loadTags, loadPages, loadWorkshopPlans])
 }

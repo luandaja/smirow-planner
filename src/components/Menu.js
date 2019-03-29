@@ -51,19 +51,29 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/" activeStyle={activeLinkStyle}>
-              Home
+              Smirow - Planner
             </Link>
           </li>
           <li>
-            <Link to="/about/" activeStyle={activeLinkStyle}>
-              About
+            <Link to="/taller-de-arte/" activeStyle={activeLinkStyle}>
+              Plan de Arte
             </Link>
           </li>
           <li>
+            <Link to="/taller-de-deporte/" activeStyle={activeLinkStyle}>
+              Planes de Deporte
+            </Link>
+          </li>
+          <li>
+            <Link to="/taller-de-animacion/" activeStyle={activeLinkStyle}>
+              Planes de Animación
+            </Link>
+          </li>
+          {/* <li>
             <Link to="/contact/" activeStyle={activeLinkStyle}>
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </Nav>
     </Header>
