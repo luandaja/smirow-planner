@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 const CardFeedList = props => {
   moment.locale('es')
   return (
-    <Card.Group centered itemsPerRow={2}>
+    <Card.Group stackable centered itemsPerRow={2}>
       {props.data.map((item, index) => (
         <Card fluid key={index}>
           <Card.Content>
