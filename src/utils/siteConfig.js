@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Smirow',
   siteTitleAlt: 'Smirow Planner', // This allows an alternative site title for SEO schema.
-  publisher: 'Luanda - Smirow', // Organization name used for SEO schema
+  publisher: 'Luandaja - Smirow', // Organization name used for SEO schema
   siteDescription: 'Repositorio de actividades para voluntariados',
   siteUrl: 'https://smirow-planner.netlify.com', // Site domain. Do not include a trailing slash! If you wish to use a path prefix you can read more about that here: https://www.gatsbyjs.org/docs/path-prefix/
   postsPerHomePage: 7, // Number of posts shown on the 1st page of of the index.js template (home page)
