@@ -55,6 +55,11 @@ const Menu = () => {
             </Link>
           </li>
           <li>
+            <Link to="/jornadas-de-comparte/" activeStyle={activeLinkStyle}>
+              Plan de Jornadas
+            </Link>
+          </li>
+          <li>
             <Link to="/taller-de-arte/" activeStyle={activeLinkStyle}>
               Plan de Arte
             </Link>
